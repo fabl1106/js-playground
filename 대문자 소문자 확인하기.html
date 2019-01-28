@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <script>
+            var char = prompt("영어 문장을 입력해보세요");
+            if (char === char.toUpperCase()) {
+                document.write("대문자로 된 문장입니다.");
+            } else if (char === char.toLowerCase()) {
+                document.write("소문자로 된 문장입니다.");
+            } else {
+                document.write("보통 문장입니다.");
+            }
+        </script>
+    </body>
+</html>
