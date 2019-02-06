@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        출력할 단 : <input type="text" id="num" />
+        <button onclick="display()">확인</button>
+        <script>
+            function display() {
+                var n = document.getElementById("num").value;
+                var m = Number(n);
+                if (m > 9) {
+                    document.write("9 이하의 숫자를 입력해주세요");
+                } else if (m < 2) {
+                    document.write("2 이상의 숫자를 입력해주세요");
+                } else {
+                    document.write(m + "단의 구구단 입니다." + "<br>");
+                    for (var i = 1; i < 10; i++) {
+                        document.write(m + "x" + i + "=" + m * i + "<br>");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
